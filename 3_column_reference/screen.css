@@ -1,15 +1,20 @@
 body {
 	margin:0;
 	padding:0;
-	border:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
 	width:100%;
 	background:#fff;
-	min-width:600px;
+	min-width:600px;		/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
 	font-size:90%;
 }
-
 a {
 	color:#369;
+}
+a:hover {
+	color:#fff;
+	background:#369;
+	text-decoration:none;
 }
 h1, h2, h3 {
 	margin:.8em 0 .2em 0;
@@ -19,22 +24,29 @@ p {
 	margin:.4em 0 .8em 0;
 	padding:0;
 }
+img {
+	margin:10px 0 5px;
+}
+#ads img {
+	display:block;
+	padding-top:10px;
+}
 
+/* Header styles */
 #header {
 	clear:both;
 	float:left;
 	width:100%;
 }
 #header {
-	border-bottom: 1px solid #000;
+	border-bottom:1px solid #000;
 }
 #header p,
 #header h1,
 #header h2 {
-	padding: .4em 15px 0 15px;
+	padding:.4em 15px 0 15px;
 	margin:0;
 }
-
 #header ul {
 	clear:left;
 	float:left;
@@ -43,7 +55,6 @@ p {
 	margin:10px 0 0 0;
 	padding:0;
 }
-
 #header ul li {
 	display:inline;
 	list-style:none;
@@ -56,7 +67,7 @@ p {
 	margin:0 0 0 1px;
 	padding:3px 10px;
 	text-align:center;
-	background:#fff;
+	background:#eee;
 	color:#000;
 	text-decoration:none;
 	position:relative;
@@ -76,10 +87,10 @@ p {
 #header ul li a span {
 	display:block;
 }
-
+/* 'widths' sub menu */
 #layoutdims {
 	clear:both;
-	background:#fff;
+	background:#eee;
 	border-top:4px solid #000;
 	margin:0;
 	padding:6px 15px !important;
@@ -112,7 +123,7 @@ p {
 }
 /* 3 Column settings */
 .threecol {
-	background:#fff;		/* right column background colour */
+	background:#eee;		/* right column background colour */
 }
 .threecol .colmid {
 	right:25%;			/* width of the right column */
@@ -120,7 +131,7 @@ p {
 }
 .threecol .colleft {
 	right:50%;			/* width of the middle column */
-	background:#fff;	/* left column background colour */
+	background:#f4f4f4;	/* left column background colour */
 }
 .threecol .col1 {
 	width:46%;			/* width of center column content (column width minus padding on either side) */
